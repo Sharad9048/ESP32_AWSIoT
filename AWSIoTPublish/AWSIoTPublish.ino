@@ -6,6 +6,9 @@ String randomNumberString;
 int count=1;
 String countString;
 
+/*
+ * Put your WiFi SSID name and Password
+ */
 #define WiFiSSID "SSID"
 #define WiFiPWD "Password"
 
