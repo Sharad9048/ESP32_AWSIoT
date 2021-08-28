@@ -5,4 +5,4 @@
 3. Move 'myCertificateData.h' file to the folder called AWSIoTPublish replace it with the older one
 
 ## Test_AWS_IoT_with_Python
-The folder containsPyhton code to test your AWS IoT
+The folder contains Pyhton code to test your AWS IoT
