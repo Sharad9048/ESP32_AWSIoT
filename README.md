@@ -8,6 +8,6 @@
 The folder contains Pyhton code to test your AWS IoT
 
 ## AWSIoTPublish/awsFunction.h
-1. Make changes to ThingName with name of the thing you created
-2. Make changes to endPoint with the end point URL in AWIoT Settings menu
-3. Make changes to topicName with the topic name that you desire
+1. Make changes to ThingName with name of the thing you created.
+2. Make changes to endPoint with the end point URL in AWIoT Settings menu.
+3. Make changes to topicName with the topic name that you desire.
