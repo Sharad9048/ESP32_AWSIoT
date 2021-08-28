@@ -4,11 +4,11 @@ import time as t
 import json
 
 # Define ENDPOINT, CLIENT_ID, PATH_TO_CERT, PATH_TO_KEY, PATH_TO_ROOT, MESSAGE, TOPIC, and RANGE
-ENDPOINT = "a23hbj38394jfv-ats.iot.ap-south-1.amazonaws.com"
+ENDPOINT = "xxxxxxxxxxx-ats.iot.ap-south-1.amazonaws.com"
 CLIENT_ID = "ESP32"
-PATH_TO_CERT = "certificates/AWS-certificate.pem.crt"
-PATH_TO_KEY = "certificates/AWS-private.pem.key"
-PATH_TO_ROOT = "certificates/AmazonRootCA1.pem"
+PATH_TO_CERT = "AWS-certificate.pem.crt"
+PATH_TO_KEY = "AWS-private.pem.key"
+PATH_TO_ROOT = "AmazonRootCA1.pem"
 MESSAGE = "Hello World"
 TOPIC = "test/testing"
 RANGE = 20
@@ -19,10 +19,10 @@ host_resolver = io.DefaultHostResolver(event_loop_group)
 client_bootstrap = io.ClientBootstrap(event_loop_group, host_resolver)
 mqtt_connection = mqtt_connection_builder.mtls_from_path(
             endpoint=ENDPOINT,
-            cert_filepath=PATH_TO_CERT,
-            pri_key_filepath=PATH_TO_KEY,
+            cert_filepath="certificates/"+PATH_TO_CERT,
+            pri_key_filepath="certificates/"+PATH_TO_KEY,
             client_bootstrap=client_bootstrap,
-            ca_filepath=PATH_TO_ROOT,
+            ca_filepath="certificates/"+PATH_TO_ROOT,
             client_id=CLIENT_ID,
             clean_session=False,
             keep_alive_secs=6
