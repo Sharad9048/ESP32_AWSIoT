@@ -1,3 +1,5 @@
+1. put your root, certificate and private key in the folder called 'certificates'
+2. 
 PythonApplication1.py is for testing your AWS IoT
 TopicName: test/testing
 
