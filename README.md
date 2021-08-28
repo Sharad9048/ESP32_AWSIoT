@@ -6,3 +6,8 @@
 
 ## Test_AWS_IoT_with_Python
 The folder contains Pyhton code to test your AWS IoT
+
+## AWSIoTPublish/awsFunction.h
+Make changes to ThingName with name of the thing you created
+Make changes to endPoint with the end point URL in AWIoT Settings menu
+Make changes to topicName with the topic name that you desire
