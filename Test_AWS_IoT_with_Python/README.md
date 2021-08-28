@@ -1,4 +1,4 @@
-1. put your root, certificate and private key in the folder called 'certificates'
+1. Put your root, certificate and private key in the folder called 'certificates'
 2. Open Python Code in editor
 3. Copy the name of the file that ends with 'certificate.pem.crt' assign the name to PATH_TO_CERT
 4. Copy the name of the file that ends with 'private.pem.key' assign the name to PATH_TO_KEY
