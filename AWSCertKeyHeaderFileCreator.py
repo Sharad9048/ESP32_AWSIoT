@@ -42,7 +42,7 @@ def headerCertInput(z):
 import os
 os.chdir(".\\certificates")
 l = os.listdir()
-requiredCert = ['CA3.pem', 'certificate.pem.crt', 'private.pem.key']
+requiredCert = ['CA1.pem', 'certificate.pem.crt', 'private.pem.key']
 nameOfCert = []
 for x in l:
     for y in requiredCert:
@@ -53,7 +53,7 @@ os.chdir("..")
 
 dirList = ['AmazonRootCA', 'AWScertificate','AWSprivateKey']
 
-f = open('myCertficateData.h','a')
+f = open('myCertificateData.h','a')
 singleWrite = False
 for line in headerList:
     for x in range(len(dirList)):
